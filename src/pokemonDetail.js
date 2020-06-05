@@ -3,7 +3,6 @@ import { Typography, Link } from "@material-ui/core";
 import mockData from "./mockData";
 import { toFirstCharUpper } from "./utils";
 
-
 const Pokemon = props => {
     const { match } = props;
     const { params } = match;
