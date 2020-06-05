@@ -5,6 +5,7 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import mockData from "./mockData";
+import { toFirstCharUpper } from "./utils";
 
 const useStyles = makeStyles({
     pokedexContainer: {
@@ -19,12 +20,6 @@ const useStyles = makeStyles({
         textAlign: "center",
     },
 });
-
-
-function toFirstCharUpper(word) {
-    return word.charAt(0).toUpperCase() + word.slice(1);
-}
-
 
 const Pokedex = props => {
     const classes = useStyles();
