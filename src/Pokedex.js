@@ -26,35 +26,18 @@ function toFirstCharUpper(word) {
 }
 
 
-const Pokedex = () => {
+const Pokedex = props => {
     const classes = useStyles();
+    const { history } = props;
     const [pokemonData, setPokemonData] = useState(mockData);
-    // const getPokemonCard = (pokemonId) => {
-    //     console.log(pokemonData[`${pokemonId}`]);
-    //     const { id, name } = pokemonData[`${pokemonId}`];
-    //     const sprite = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
-    //     return (
-    //         <Grid item xs={12} sm={4} key={pokemonId}> {/* responsive - sm for smaller mobile screen sizes */}
-    //             <Card>
-    //                 <CardMedia
-    //                     className={classes.cardMedia}
-    //                     image={sprite}
-    //                     style={{ width: "130px", height: "130px" }}
-    //                 />
-    //                 <CardContent className={classes.cardContent}>
-    //                     <Typography>{`${id}. ${toFirstCharUpper(name)}`}</Typography>
-    //                 </CardContent>
-    //             </Card>
-    //         </Grid>
-    //     );
-    // };
+
     function getPokemonCard(pokemonId) {
         console.log(pokemonData[`${pokemonId}`]);
         const { id, name } = pokemonData[`${pokemonId}`];
         const sprite = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
         return (
             <Grid item xs={12} sm={4} key={pokemonId}> {/* responsive - sm for smaller mobile screen sizes */}
-                <Card>
+                <Card onClick={() => history.push(`/${pokemonId}`)}>
                     <CardMedia
                         className={classes.cardMedia}
                         image={sprite}
