@@ -10,8 +10,7 @@ Thanks to Pokemon API -- https://pokeapi.co !
     * searchbar and toolbar!
 * how to search functionality (basic)
 * how to make a basic API call
-* how. easy! it is! to build something!
-
+* how. easy! it is! to build something!!
 
 # React-Things Below
 
