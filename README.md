@@ -1,4 +1,19 @@
-Pokemon API -- https://pokeapi.co/
+Thanks to Pokemon API -- https://pokeapi.co !
+
+## Things I learned (for my own ref!):
+* how to create a React app from scratch!
+* Javascript !!!!!
+* how to ReactJS - syntax, styling, etc
+* how to use Material UI cards/grids/typography/etc
+    * card styling - shadows, textAlign, etc
+    * typography - basic font manipulation
+    * searchbar and toolbar!
+* how to search functionality (basic)
+* how to make a basic API call
+* how. easy! it is! to build something!
+
+
+# React-Things Below
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
